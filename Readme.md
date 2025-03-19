@@ -63,7 +63,7 @@ npx tsx --init
 
 ```
 
-- to create a simple express server 
+- to create a simple express server
 ``` 
 //server.ts
 import express, { Application, Request, Response } from 'express';
@@ -109,4 +109,13 @@ app.listen(PORT, () => {
 
 ```
 
+**Note: To setup Monogodb connection**
+- Create a cluster in monogo atlas.
+- Create a connection in that cluster.
+- Get the Mongo URI from the connection.
+- Create a .env file and paste the Mongo URI in the file 
+```
+//.env
+MONGO_URI = (mongo URI)
+```
 
