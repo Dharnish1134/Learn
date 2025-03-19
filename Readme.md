@@ -70,7 +70,6 @@ import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
-import { tryFunction } from './try';
 
 dotenv.config();
 
@@ -100,7 +99,6 @@ app.get('/', (req: Request, res: Response) => {
     res.send('Hello, MERN Stack creat TypeScript!');
 });
 
-app.get('/try', tryFunction);
 
 // Start Server
 app.listen(PORT, () => {
