@@ -43,16 +43,16 @@ plugins:[
  npm init -y
 ```
 ```
-npm install express cors dotenv mongoose
+npm install express cors dotenv mongoose 
 ```
 ```
-npm install --save-dev typescript ts-node @types/node @types/express @types/cors @types/mongoose nodemon
+npm install --save-dev typescript ts-node @types/node @types/express @types/cors @types/mongoose nodemon @typegoose/typegoose
 ```
 ```
 npx tsc --init
 ```
 
-- Create a src folder and a server.ts file and In the tsconfig file Enable the rootDir as './src' 
+- Create a src folder and a server.ts file and In the tsconfig file Enable the rootDir as './src' and enable experimentalDecorators and emitDecoratorMetadata
 - create a script to start the server which uses nodemon to watch and run the files 
 ```
 // in package.json 
